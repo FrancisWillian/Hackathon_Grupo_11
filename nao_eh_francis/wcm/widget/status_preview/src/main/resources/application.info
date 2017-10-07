@@ -1,0 +1,20 @@
+application.type=widget
+application.code=status_preview
+application.title=Status Preview
+application.description=Status Preview
+application.category=SYSTEM
+application.renderer=freemarker
+developer.code=01ENOTI06
+developer.name=totvscuritiba
+developer.url=http://www.fluig.com
+application.uiwidget=true
+application.mobileapp=false
+application.product=ECM
+view.file=view.ftl
+locale.file.base.name=status_preview
+application.resource.component.1=datatable
+application.resource.js.2=/resources/js/script.js
+application.resource.js.3=/ecm_resources/resources/ecm-plugins.js
+application.resource.css.4=/resources/css/style.css
+application.resource.kit.2=crud
+
