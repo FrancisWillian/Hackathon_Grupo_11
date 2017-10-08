@@ -1,0 +1,11 @@
+<div id="WCMVPage_${instanceId?c}"
+     class="${pageSkin!'blue'} wcm-widget-class super-widget fluig-style-guide"
+     data-params="ViewPages.instance()">
+
+    <div id="wcm-vpage">
+        <div id="wcm-vpage-divSearch"></div>
+        <table id="wcm-vpage-table"></table>
+        <div id="wcm-vpage-table-paginator"></div>
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+.pn{
+	background-color: #F8F8FF;
+	border:1px solid #ccc;
+	border-radius:5px;
+	height:100px!important;
+	-webkit-box-shadow:0px 4px 1px #009bfb;
+	 -moz-box-shadow:0px 4px 1px #009bfb;
+	 box-shadow:0px 4px 1px #009bfb; 
+}
+
+.row{
+	margin-bottom: 10px!important;
+}
+
+#centralTask{
+	background-color: #FFF;
+	border-left: 3px solid #009bfb;
+	border-left-radius:5px;
+}
+
+#actions:hover{
+	cursor: pointer;
+	background-color: #FFF8FF;
+	-webkit-box-shadow:4px 4px 4px #009bdb;
+	 -moz-box-shadow:4px 4px 4px #009bdb;
+	 box-shadow:4px 4px 4px #009bdb; 
+}
+
+.rw-head{
+	border-bottom: 1px solid #009bfb;
+}

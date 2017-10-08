@@ -1,0 +1,17 @@
+application.type=widget
+application.code=nao_eh_francis_3
+application.title=nao_eh_francis_3
+application.description=nao_eh_francis_3
+application.category=SYSTEM
+application.renderer=freemarker
+developer.code=01ENOTI06
+developer.name=totvscuritiba
+developer.url=http://www.fluig.com
+application.uiwidget=true
+application.mobileapp=true
+view.file=view.ftl
+locale.file.base.name=nao_eh_francis_3
+application.resource.js.1=/resources/js/view.js
+application.resource.kit.2=crud
+application.resource.component.3=tabview
+application.resource.component.4=datatable

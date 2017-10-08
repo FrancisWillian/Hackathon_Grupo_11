@@ -1,0 +1,5 @@
+<div id="WCMVPage_${instanceId?c}"
+     class="${pageSkin!'blue'} wcm-widget-class super-widget fluig-style-guide">
+     
+
+</div>

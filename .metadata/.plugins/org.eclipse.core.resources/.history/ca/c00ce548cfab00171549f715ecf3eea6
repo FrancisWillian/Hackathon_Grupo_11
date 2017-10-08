@@ -1,0 +1,47 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.workflow.ecm.technology.totvs.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:simpleStartProcess>
+         <username name="user"></username>
+         <password name="pass"></password>
+         <companyId>1</companyId>
+         <processId>naoEfrancis</processId>
+         <comments>Open WS</comments>
+         <attachments>
+         
+          <item>
+<attachmentSequence>0</attachmentSequence>
+          
+          <attachments>
+   <attach>true</attach>
+                  <!--Optional:-->
+                  <descriptor>true</descriptor>
+                  <!--Optional:-->
+                  <editing>true</editing>
+                  <!--Optional:-->
+                  <fileName>Anexo</fileName>
+                  <!--Optional:-->
+                  <fileSelected/>
+                  <fileSize>0</fileSize>
+                  <!--Optional:-->
+                  <filecontent name="base64">
+                
+                  </filecontent>
+                  
+              
+                  <principal>true</principal>
+
+          </attachments>
+          <colleagueId>fluig</colleagueId>
+               <colleagueName>fluig</colleagueName>
+               <companyId>1</companyId>
+               <description>Fluig</description>
+               <size>0</size>
+          </item>
+         </attachments>
+         <cardData name="dados">
+            
+         </cardData>
+      </ws:simpleStartProcess>
+   </soapenv:Body>
+</soapenv:Envelope>​​

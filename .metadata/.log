@@ -15,3 +15,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui.navigator.resources 4 0 2017-10-07 17:32:32.968
 !MESSAGE Could not acquire INavigatorContentService: Project Explorer not found.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-07 23:07:08.001
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-07 23:07:08.012
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
