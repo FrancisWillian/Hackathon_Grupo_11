@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$("#must_1").append(modelCentralTask());
 	$('#anexo').change( function(event) {
 		var anexo = URL.createObjectURL(event.target.files[0]);
-		startProcess();
+		console.log(anexo);
 	});
 });
 
@@ -214,27 +214,27 @@ validaCampos = function(){
 		//console.log(getBase64(evt));
 		f = 'PGh0bWw+CjxoZWFkPgoJPGxpbmsgdHlwZT0idGV4dC9jc3MiIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iL3BvcnRhbC9yZXNvdXJjZXMvc3R5bGUtZ3VpZGUvY3NzL2ZsdWlnLXN0eWxlLWd1aWRlLm1pbi5jc3MiLz4KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii9wb3J0YWwvcmVzb3VyY2VzL2pzL2pxdWVyeS9qcXVlcnkuanMiPjwvc2NyaXB0PgoJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3BvcnRhbC9yZXNvdXJjZXMvanMvanF1ZXJ5L2pxdWVyeS11aS5taW4uanMiPjwvc2NyaXB0PgoJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3BvcnRhbC9yZXNvdXJjZXMvanMvbXVzdGFjaGUvbXVzdGFjaGUtbWluLmpzIj48L3NjcmlwdD4KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii9wb3J0YWwvcmVzb3VyY2VzL3N0eWxlLWd1aWRlL2pzL2ZsdWlnLXN0eWxlLWd1aWRlLm1pbi5qcyIgY2hhcnNldD0idXRmLTgiPjwvc2NyaXB0Pgo8L2hlYWQ+Cjxib2R5Pgo8ZGl2IGNsYXNzPSJmbHVpZy1zdHlsZS1ndWlkZSI+Cjxmb3JtIG5hbWU9ImZvcm0iIHJvbGU9ImZvcm0iPgoKPGRpdiBjbGFzcz0icm93Ij4KCTxkaXYgY2xhc3M9ImNvbC1tZC00Ij4KCQk8bGFiZWw+VGlwbyBkbyBjb250cmF0bzo8L2xhYmVsPgoJCTxkaXYgY2xhc3M9ImlucHV0LWdyb3VwIj4KCSAgICAJPGlucHV0IGNsYXNzPSJmb3JtLWNvbnRyb2wiIHR5cGU9InRleHQiIG5hbWU9InRpcG9Db250cmF0byIgaWQ9InRpcG9Db250cmF0byIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD7BcmVhIGRvIHByb2Nlc3NvPC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJhcmVhUHJvY2Vzc28iIGlkPSJhcmVhUHJvY2Vzc28iLz4JICAgIAkKCQk8L2Rpdj4KCQkKCQk8bGFiZWw+TWVkaWFkb3I6PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJtZWRpYWRvciIgaWQ9Im1lZGlhZG9yIi8+CgkJPC9kaXY+CgkJCgkJPGxhYmVsPkZvcm5lY2Vkb3I6PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJmb3JuZWNlZG9yIiBpZD0iZm9ybmVjZWRvciIvPgoJCTwvZGl2PgkKCQkKCQk8bGFiZWw+Q29udGF0byBmb3JuZWNlZG9yOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0iY29udGF0b0Zvcm5lY2Vkb3IiIGlkPSJjb250YXRvRm9ybmVjZWRvciIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5Jbu1jaW8gcHJldmlzdG86PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJpbmljaW9QcmV2aXN0byIgaWQ9ImluaWNpb1ByZXZpc3RvIi8+CgkJPC9kaXY+CgkJCgkJPGxhYmVsPlZpZ+puY2lhOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0idmlnZW5jaWEiIGlkPSJ2aWdlbmNpYSIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5PYnNlcnZh5/Vlczo8L2xhYmVsPgoJCTxkaXYgY2xhc3M9ImlucHV0LWdyb3VwIj4KCSAgICAJPHRleHRhcmVhIGNsYXNzPSJmb3JtLWNvbnRyb2wiIHR5cGU9InRleHQiIG5hbWU9Im9ic2VydmFjb2VzIiBpZD0ib2JzZXJ2YWNvZXMiLz48L3RleHRhcmVhPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5BcHJvdmHn428gZ2VzdG9yOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0iYXByb3ZHZXN0b3IiIGlkPSJhcHJvdkdlc3RvciIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5BcHJvdmHn428gYWRtOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0iYXByb3ZBZG0iIGlkPSJhcHJvdkFkbSIvPgoJCTwvZGl2PgoJCTxsYWJlbD5BcHJvdmHn428ganVyaWRpY286PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJhcHJvdkp1cmlkaWNvIiBpZD0iYXByb3ZKdXJpZGljbyIvPgoJCTwvZGl2PgoJPC9kaXY+CjwvZGl2PgkKCjwvZm9ybT4KPC9kaXY+CjwvYm9keT4KPC9odG1sPg==';
 	var anexo = [{
-            		'item':[{ 
-            			'attachmentsSequence':0,
-            			'colleagueId':'fluig',	
+            		'item':[{            			
+            			'attachments':[{
+            				'attach':true,
+	            			'descriptor':'Anexo',
+	            			'editing':true,
+	            			'fileName':'teste.txt',
+	            			'fileSize':0,
+	            			'filecontent':f,
+	            			'principal':true,
+			                'deleted': false,
+			                'newAttach': true
+		                 }],
+		                 'colleagueId':'fluig',	
 		                 'colleagueName':'fluig',
 		                 'companyId': 1,
 		                 'description':'Teste Inicio',
-		                 'fileName': 'TESTE',           			
-            			'attachments':[{
-            				/*'attach':true,
-	            			'descriptor':'Anexo',
-	            			'editing':true,*/
-	            			'fileName':'teste.txt',
-	            			'fileSize':0,
-	            			'filecontent':''
-	            			/*'principal':true,
-			                'deleted': false,
-			                'newAttach': true*/
-		                 }]		                 	                
+		                 'size': 0	                
 		               }]
 	                }];
 
+	                console.log('anexo -->',anexo);
 	var dados = {
 		'tipoContrato': $('#tipoContrato option:selected').text(), 
 		'inicioPrevisto': $("#inicioPrevisto").val(),
@@ -249,28 +249,27 @@ validaCampos = function(){
 }
 
 
-startProcessx = function (dados,anexo){
+startProcess = function (dados,anexo){
 	var prm = new SOAPClientParameters();
 		prm.add("username", "fluig");
 		prm.add("password", "fluig");
 		prm.add("companyId", "1");
 		prm.add("processId", "naoEfrancis");
 		prm.add("comments", 'TESTE');
+		prm.add("userId", 'fluig');
+		prm.add('attachmentSequence',0);
 		prm.add("attachments", anexo);
-		prm.add("cardData", [{
+		prm.add("cardData", [
 			'item':[
-					{field:'tipoContrato',value:dados['tipoContrato']},
-					{field:'inicioPrevisto',value:dados['inicioPrevisto']},
-					{field:'areaProcesso',value:dados['areaProcesso']},
-					{field:'vigencia',value:dados['vigencia']},
-					{field:'fornecedor',value:dados['fornecedor']},
-					{field:'contatoFornecedor',value:dados['contatoFornecedor']},
-					{field:'mediador',value:dados['mediador']},
-					{field:'cartorio',value:dados['cartorio']}	
-				]
-		
-		}])
-		console.log('anexo -->',prm);
+				{field:'tipoContrato',value:dados['tipoContrato']},
+				{field:'inicioPrevisto',value:dados['inicioPrevisto']},
+				{field:'areaProcesso',value:dados['areaProcesso']},
+				{field:'vigencia',value:dados['vigencia']},
+				{field:'fornecedor',value:dados['fornecedor']},
+				{field:'contatoFornecedor',value:dados['contatoFornecedor']},
+				{field:'mediador',value:dados['mediador']},
+				{field:'cartorio',value:dados['cartorio']}	
+				]]);
 	try{
 		var jsonText = SOAPClient.invoke("http://fluig11.hackathon2017.fluig.io:8080/webdesk/ECMWorkflowEngineService", "simpleStartProcess", prm, false, null, "result").json;
 		console.warn(jsonText);
@@ -283,67 +282,4 @@ startProcessx = function (dados,anexo){
 		console.warn(jsonText);
 		throw e
 	}
-}
-
-
-startProcess = function(){
-var envelope = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.workflow.ecm.technology.totvs.com/">'
-+   '<soapenv:Header/>'
-+   '<soapenv:Body>'
-+      '<ws:simpleStartProcess>'
-+         '<username>fluig</username>'
-+         '<password>fluig</password>'
-+         '<companyId>1</companyId>'
-+         '<processId>naoEfrancis</processId>'
-+         '<comments>Aberto automaticamente via SOAPUI</comments>'
-+         '<attachments>'
-         
-+         ' <item>'
-+'<attachmentSequence>0</attachmentSequence>'
-          
-   +       '<attachments>'
-  + '<attach>true</attach>'
-     +             '<descriptor>true</descriptor>'
-                  
-    +              '<editing>true</editing>'
-                  
-     +             '<fileName>Meu arquivo</fileName>'
-                  
-    +              '<fileSelected/>'
-    +              '<fileSize>0</fileSize>'
-                  
-    +              '<filecontent>'
-    +                 'PGh0bWw+CjxoZWFkPgoJPGxpbmsgdHlwZT0idGV4dC9jc3MiIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iL3BvcnRhbC9yZXNvdXJjZXMvc3R5bGUtZ3VpZGUvY3NzL2ZsdWlnLXN0eWxlLWd1aWRlLm1pbi5jc3MiLz4KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii9wb3J0YWwvcmVzb3VyY2VzL2pzL2pxdWVyeS9qcXVlcnkuanMiPjwvc2NyaXB0PgoJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3BvcnRhbC9yZXNvdXJjZXMvanMvanF1ZXJ5L2pxdWVyeS11aS5taW4uanMiPjwvc2NyaXB0PgoJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL3BvcnRhbC9yZXNvdXJjZXMvanMvbXVzdGFjaGUvbXVzdGFjaGUtbWluLmpzIj48L3NjcmlwdD4KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Ii9wb3J0YWwvcmVzb3VyY2VzL3N0eWxlLWd1aWRlL2pzL2ZsdWlnLXN0eWxlLWd1aWRlLm1pbi5qcyIgY2hhcnNldD0idXRmLTgiPjwvc2NyaXB0Pgo8L2hlYWQ+Cjxib2R5Pgo8ZGl2IGNsYXNzPSJmbHVpZy1zdHlsZS1ndWlkZSI+Cjxmb3JtIG5hbWU9ImZvcm0iIHJvbGU9ImZvcm0iPgoKPGRpdiBjbGFzcz0icm93Ij4KCTxkaXYgY2xhc3M9ImNvbC1tZC00Ij4KCQk8bGFiZWw+VGlwbyBkbyBjb250cmF0bzo8L2xhYmVsPgoJCTxkaXYgY2xhc3M9ImlucHV0LWdyb3VwIj4KCSAgICAJPGlucHV0IGNsYXNzPSJmb3JtLWNvbnRyb2wiIHR5cGU9InRleHQiIG5hbWU9InRpcG9Db250cmF0byIgaWQ9InRpcG9Db250cmF0byIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD7BcmVhIGRvIHByb2Nlc3NvPC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJhcmVhUHJvY2Vzc28iIGlkPSJhcmVhUHJvY2Vzc28iLz4JICAgIAkKCQk8L2Rpdj4KCQkKCQk8bGFiZWw+TWVkaWFkb3I6PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJtZWRpYWRvciIgaWQ9Im1lZGlhZG9yIi8+CgkJPC9kaXY+CgkJCgkJPGxhYmVsPkZvcm5lY2Vkb3I6PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJmb3JuZWNlZG9yIiBpZD0iZm9ybmVjZWRvciIvPgoJCTwvZGl2PgkKCQkKCQk8bGFiZWw+Q29udGF0byBmb3JuZWNlZG9yOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0iY29udGF0b0Zvcm5lY2Vkb3IiIGlkPSJjb250YXRvRm9ybmVjZWRvciIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5Jbu1jaW8gcHJldmlzdG86PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJpbmljaW9QcmV2aXN0byIgaWQ9ImluaWNpb1ByZXZpc3RvIi8+CgkJPC9kaXY+CgkJCgkJPGxhYmVsPlZpZ+puY2lhOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0idmlnZW5jaWEiIGlkPSJ2aWdlbmNpYSIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5PYnNlcnZh5/Vlczo8L2xhYmVsPgoJCTxkaXYgY2xhc3M9ImlucHV0LWdyb3VwIj4KCSAgICAJPHRleHRhcmVhIGNsYXNzPSJmb3JtLWNvbnRyb2wiIHR5cGU9InRleHQiIG5hbWU9Im9ic2VydmFjb2VzIiBpZD0ib2JzZXJ2YWNvZXMiLz48L3RleHRhcmVhPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5BcHJvdmHn428gZ2VzdG9yOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0iYXByb3ZHZXN0b3IiIGlkPSJhcHJvdkdlc3RvciIvPgoJCTwvZGl2PgoJCQoJCTxsYWJlbD5BcHJvdmHn428gYWRtOjwvbGFiZWw+CgkJPGRpdiBjbGFzcz0iaW5wdXQtZ3JvdXAiPgoJICAgIAk8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0iYXByb3ZBZG0iIGlkPSJhcHJvdkFkbSIvPgoJCTwvZGl2PgoJCTxsYWJlbD5BcHJvdmHn428ganVyaWRpY286PC9sYWJlbD4KCQk8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CgkgICAgCTxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJhcHJvdkp1cmlkaWNvIiBpZD0iYXByb3ZKdXJpZGljbyIvPgoJCTwvZGl2PgoJPC9kaXY+CjwvZGl2PgkKCjwvZm9ybT4KPC9kaXY+CjwvYm9keT4KPC9odG1sPg=='
-    +              '</filecontent>'
-                  
-              
-    +              '<principal>true</principal>'
-
-    +      '</attachments>'
-    +      '<colleagueId>fluig</colleagueId>'
-    +           '<colleagueName>fluig</colleagueName>'
-    +           '<companyId>1</companyId>'
-    +           '<description>fluig</description>'
-    +           '<size>0</size>'
-    +      '</item>'
-    +     '</attachments>'
-   +      '<cardData>'
-            
-  +       '</cardData>'
- +     '</ws:simpleStartProcess>'
- +  '</soapenv:Body>'
-+'</soapenv:Envelope>​​';
-
- $.ajax({
-      url : "http://fluig11.hackathon2017.fluig.io:8080/webdesk/ECMWorkflowEngineService?wsdl/simpleStartProcess",
-          type : 'post',
-          data : envelope,
-         
-     })
-     .done(function(msg){
-          console.log(msg);
-     })
-     .fail(function(jqXHR, textStatus, msg){
-          alert(msg);
-     }); 
 }

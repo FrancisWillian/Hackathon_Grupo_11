@@ -1,0 +1,1 @@
+INDEX VERSION 1.3+C:\Users\totvscuritiba\Documents\Hackathon_grupo11\Hackathon_Grupo_11\nao_eh_francis\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
